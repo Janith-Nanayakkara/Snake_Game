@@ -39,4 +39,15 @@ def change(x,y):
                 update()
                 ontimer(move,100)
 
+                hideturtle()
+                tracer(False)
+                listen()
+                onkey(lambda : change(10,0),'Right')
+                onkey(lambda: change(-10, 0),'Left')
+                onkey(lambda: change(0,10),'Up')
+                onkey(lambda: change(0,-10),'Down')
+
+
+                move()
+                done()
 
